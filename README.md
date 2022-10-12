@@ -1,4 +1,4 @@
-# R pratice by teng
+# R pratice
 There will be two types of practice
 1. R + rstudio
 2. sparkr
