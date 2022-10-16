@@ -79,7 +79,7 @@ id <- 1:4
 age <- c(25, 30, 35, 40)
 gender <- c("Male", "Male", "Female", "Female")
 pay <- c(30000, 40000, 45000, 50000)
-X.dataframe <- data.frame(id, gender, sex, pay)
+X.dataframe <- data.frame(id, gender, pay)
 # Access an element, elements in a column
 X.dataframe$gender
 X.dataframe[2]
