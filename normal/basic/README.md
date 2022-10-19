@@ -102,3 +102,31 @@ Yu.family[2] # elements key and elements
 Yu.family[[2]] #  elements
 Yu.family[[2]][1] # element
 ```
+
+## Data loading and saving
+### basic
+* read.table
+* read.csv
+* scan
+```
+setwd("C:/Users/yuteng/Desktop")
+getwd()
+X <- read.table("X.csv", sep=",", header=TRUE) # read.csv("X.csv", header=TRUE)
+X <- read.table("X.txt", header=TRUE)
+result.scan <- scan(file="", what=list(name="", pay=integer(0), gender="")) # UI interation
+X <- scan("X1.csv", sep=",", what=list(id="", age=integer(0), gender="", pay=integer(0)))
+str(X)
+summary(X)
+```
+### saving
+#### write.table
+```
+write.table(X, "C:/users/yuteng/Desktop/X_file.csv", row.names=FALSE, col.names=TRUE, sep=",")
+```
+#### RData saving and loading
+```
+data(iris)
+save(iris, file="iris.RData")
+load("iris.RData", .GlobalEnv)
+```
+
